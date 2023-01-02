@@ -1,24 +1,25 @@
 import React, {useState} from "react";
 
 import "../assets/styles/Nav/StyleNavBar.css";
+import {HashLink as Link} from "react-router-hash-link";
 
 export default function Navbar() {
   const items = [
     {
       name: "Home",
-      url: "/",
+      url: "#home",
     },
     {
       name: "About",
-      url: "/about",
-    },
-    {
-      name: "Contact",
-      url: "/contact",
+      url: "#about",
     },
     {
       name: "Projects",
-      url: "/projects",
+      url: "#projects",
+    },
+    {
+      name: "Contact",
+      url: "#contact",
     },
   ];
   return (
@@ -34,10 +35,10 @@ export default function Navbar() {
       >
         <span className='cls'></span>
         <span>
-          <ul className='sub-menu '>
+          <ul className='sub-menu justify-center items-end flex flex-col'>
             {items.map((item, index) => (
               <li key={index}>
-                <a href={item.url}>{item.name}</a>
+                <Link to={item.url}>{item.name}</Link>
               </li>
             ))}
           </ul>

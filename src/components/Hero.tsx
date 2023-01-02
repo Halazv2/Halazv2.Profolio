@@ -2,7 +2,7 @@ import React from "react";
 import me from "../assets/images/me.jpg";
 export default function Hero() {
   return (
-    <section className='hero '>
+    <section className='hero' id='home'>
       <div className='lg:flex  justify-between text-white border-2 border-white border-dashed rounded-2xl p-4'>
         <div className='flex flex-col justify-evenly mb-3 lg:mb-0'>
           <div className='flex flex-col mb-4'>
@@ -22,9 +22,6 @@ export default function Hero() {
           <img src={me} alt='me' className='lg:w-96' />
         </div>
       </div>
-      <small className='flex flex-col justify-center items-center mt-4 mb-4'>
-        <code className='text-center '>Below are details of some of projects I have worked on. Feel free to check them out.</code>
-      </small>
     </section>
   );
 }

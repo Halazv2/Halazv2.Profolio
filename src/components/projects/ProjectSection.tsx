@@ -9,7 +9,7 @@ export default function ProjectSection() {
   }, [projects]);
 
   return (
-    <section className='text-white border-2 border-white border-dashed pt-6 w-full h-fit p-4 '>
+    <section className='text-white border-2 border-white border-dashed pt-6 w-full h-fit p-4' id='projects'>
       <div className='flex flex-col mb-4 justify-center items-center '>
         <h1 className='text-5xl font-bold text-red-700'>Projects</h1>
       </div>
