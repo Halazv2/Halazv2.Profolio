@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 import "../assets/styles/Nav/StyleNavBar.css";
-import {HashLink as Link} from "react-router-hash-link";
+import {HashLink} from "react-router-hash-link";
 
 export default function Navbar() {
   const items = [
@@ -38,7 +38,7 @@ export default function Navbar() {
           <ul className='sub-menu justify-center items-end flex flex-col'>
             {items.map((item, index) => (
               <li key={index}>
-                <Link to={item.url}>{item.name}</Link>
+                <HashLink to={item.url}>{item.name}</HashLink>
               </li>
             ))}
           </ul>

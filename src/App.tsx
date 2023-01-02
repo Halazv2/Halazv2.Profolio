@@ -4,12 +4,10 @@ import {BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='App'>
-        <Navbar />
-        <Home />
-      </div>
-    </BrowserRouter>
+    <div className='App'>
+      <Navbar />
+      <Home />
+    </div>
   );
 }
 
