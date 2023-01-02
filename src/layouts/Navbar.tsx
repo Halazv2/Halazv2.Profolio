@@ -22,7 +22,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav>
+    <nav className='z-50 fixed'>
       <div
         className='open'
         onClick={() => {
