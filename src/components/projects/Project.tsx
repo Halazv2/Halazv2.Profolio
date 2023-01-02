@@ -1,11 +1,11 @@
 import React from "react";
 import "../../assets/styles/card/card.css";
 import bg from "../../assets/images/cool-background.png";
-export default function Card(props: {project: any}) {
+export default function Project(props: {project: any}) {
   return (
     <ul className='cards w-full h-full'>
       <li>
-        <a href={props.project.git_url} className='card' target='_blank' rel='noreferrer'>
+        <a href={props.project.html_url.replace("git://", "https://")} className='card' target='_blank' rel='noreferrer'>
           <img src='https://wallpapercave.com/wp/wp6012329.png' className='card__image w-full h-full' alt='' />
           <div className='card__overlay'>
             <div className='card__header'>

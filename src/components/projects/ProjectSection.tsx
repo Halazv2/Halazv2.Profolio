@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import Card from "./Card";
+import Project from "./Project";
 import useGetProjects from "../../hooks/useGetProjects";
 
 export default function ProjectSection() {
@@ -22,7 +22,7 @@ export default function ProjectSection() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full h-full '>
             {projects.map((project: any) => {
               if (project.language !== null && project.language !== "HTML" && project.watchers_count > 0 && project.language !== "C") {
-                return <Card key={project.id} project={project} />;
+                return <Project key={project.id} project={project} />;
               }
             })}
           </div>
